@@ -9,12 +9,12 @@
  *   -
  * ```js
  *  // 基础示例
- *  const { flun } = require('flun');
+ *  const { flun } = require('open-flun');
  *
  * ```
  *   -
  */
-declare module 'flun' {
+declare module 'open-flun' {
     // import { xyz } from 'xyz';
 
     // ============ 类 ============
@@ -23,7 +23,7 @@ declare module 'flun' {
      * 占位类
      * ```js
      *  // 配置示例
-     *  const { abc } = require('flun');
+     *  const { abc } = require('open-flun');
      *
      * ```
      */
@@ -34,7 +34,7 @@ declare module 'flun' {
     /**
      * 占位函数
      * ```js
-     * const {fun} = require('flun');
+     * const {fun} = require('open-flun');
      *
      * ```
      */
