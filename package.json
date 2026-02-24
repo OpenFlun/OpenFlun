@@ -26,7 +26,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flunGit/flun.git"
+    "url": "git+https://github.com/flunGit/flun.git"
   },
   "homepage": "https://www.npmjs.com/package/open-flun#readme",
   "bugs": {
