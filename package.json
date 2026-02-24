@@ -8,13 +8,32 @@
   },
   "keywords": [
     "placeholder",
-    "reserved"
+    "reserved",
+    "flun"
+  ],
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "copy-files.js",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
   ],
   "author": "flun <cn@flun.top>",
   "license": "ISC",
   "type": "commonjs",
+  "types": "index.d.ts",
+  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/flunGit/flun.git"
+  },
+  "homepage": "https://www.npmjs.com/package/open-flun#readme",
+  "bugs": {
+    "url": "https://github.com/flunGit/flun/issues"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
   }
 }
