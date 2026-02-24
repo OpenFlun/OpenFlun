@@ -1,0 +1,20 @@
+{
+  "name": "flun",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "placeholder",
+    "reserved"
+  ],
+  "author": "flun <cn@flun.top>",
+  "license": "ISC",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flunGit/flun.git"
+  }
+}
