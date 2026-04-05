@@ -7,7 +7,7 @@
 此发布仅用于在 npm 注册表上保留 `open-flun` 这个包名。
 
 ## 安装
-```bash
+```sh
 # 本地安装
 npm i open-flun
 # 或
