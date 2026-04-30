@@ -1,42 +1,52 @@
-// index.d.ts
+import { copyFile } from './copy-files.js';
+
+// =================================== copy-files.js ===================================
+/**
+ * ```js
+ * // 文件导出内容
+ * copyFile(); // 复制文件到项目根目录
+ * ```
+ * ---
+ * >
+ * >查看定义:@see {@link copyFile}
+ */
+declare module './copy-files.js' {
+    export * from './copy-files.js';
+}
 /**
  * Windows功能模块 主要功能：
  * ```js
- * class{};             // 类
- * fun();               // 函数
+ * class openFlun{}; // 占位类
+ * fun();            // 占位函数
  * ```
  * ---
- *   -
+ * >
  * ```js
  *  // 基础示例
- *  const { flun } = require('open-flun');
+ *  const { openFlun } from 'open-flun';
  *
  * ```
- *   -
+ * >查看定义:@see {@link openFlun}、{@link fun}
  */
-declare module 'open-flun' {
-    // import { xyz } from 'xyz';
-
-    // ============ 类 ============
-
+declare module './index.js' {
     /**
-     * 占位类
-     * ```js
-     *  // 配置示例
-     *  const { abc } = require('open-flun');
-     *
-     * ```
-     */
-    export class abc { }
-
-    // ============ 函数 ============
+      * 占位类
+      * @example
+      * import { openFlun } from 'open-flun';
+      * console.log(openFlun.message); // 占位提示
+      * console.log(openFlun.version); // 版本号
+      */
+    export class openFlun {
+        static message: string;
+        static version: string;
+    }
 
     /**
      * 占位函数
-     * ```js
-     * const {fun} = require('open-flun');
-     *
-     * ```
+     * @returns 占位提示字符串
+     * @example
+     * import { fun } from 'open-flun';
+     * console.log(fun()); // 'This is a placeholder function.'
      */
-    export function fun(): void;
+    export function fun(): string;
 }

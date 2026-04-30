@@ -2,6 +2,11 @@
   "name": "open-flun",
   "version": "1.0.6",
   "description": "当前包为占位包,暂时不提供实际功能,待项目完成后,发布实际功能",
+  "type": "module",
+  "types": "index.d.ts",
+  "exports": {
+    ".": "./index.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,20 +25,17 @@
     "LICENSE"
   ],
   "author": "flun <cn@flun.top>",
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.0.0"
+  },
   "license": "ISC",
-  "type": "commonjs",
-  "types": "index.d.ts",
-  "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flunGit/flun.git"
+    "url": "git+https://github.com/flunGit/open-flun.git"
   },
   "homepage": "https://www.npmjs.com/package/open-flun#readme",
   "bugs": {
-    "url": "https://github.com/flunGit/flun/issues"
-  },
-  "engines": {
-    "node": ">=20.0.0",
-    "npm": ">=9.0.0"
+    "url": "https://github.com/flunGit/open-flun/issues"
   }
 }
