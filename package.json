@@ -32,10 +32,10 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flunGit/open-flun.git"
+    "url": "git+https://github.com/OpenFlun/OpenFlun.git"
   },
   "homepage": "https://www.npmjs.com/package/open-flun#readme",
   "bugs": {
-    "url": "https://github.com/flunGit/open-flun/issues"
+    "url": "https://github.com/OpenFlun/OpenFlun/issues"
   }
 }
