@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url), __dirname = path.dirname(__filename),
 
     // 要复制的文件位置和文件目标位置
-    targetDir = path.resolve(__dirname, '../..'), fileName = 'abc.js',
+    targetDir = path.resolve(__dirname, '../..'), fileName = 'example.js',
 
     // 要拷贝的文件和目标文件路径
     sourceFile = path.join(__dirname, fileName), targetFile = path.join(targetDir, fileName);
