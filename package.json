@@ -27,8 +27,9 @@
   ],
   "files": [
     "cli.js",
-    "index.js",
+    "open.js",
     "index.d.ts",
+    "index.js",
     "copy-files.js",
     "example.js",
     "README.md",

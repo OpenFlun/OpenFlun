@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { installAll, printStatus } from './index.js';
+import { installAll, printStatus } from './open.js';
 import { copyFile } from './copy-files.js';
 
 const helpText = `
