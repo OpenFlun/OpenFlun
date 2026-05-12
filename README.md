@@ -14,10 +14,10 @@ Flun 生态统一入口：一键安装所有官方包、查看安装状态、初
 
 ```sh
 # 本地安装（推荐）
-npm install open-flun
+npm i open-flun
 
 # 全局安装（可在任意目录直接使用 open-flun 命令）
-npm install -g open-flun
+npm i -g open-flun
 ```
 
 也可直接通过 `npx` 使用，无需安装：
@@ -53,7 +53,7 @@ npx open-flun help
 ### API 使用
 
 ```js
-import { installAll, listPackages, printStatus } from 'open-flun';
+import { copyFile,installAll, listPackages, printStatus } from 'open-flun';
 
 // 安装所有官方包（可选参数：'save' | 'dev' | 'none'）
 installAll();           // 默认 'save'
@@ -67,6 +67,7 @@ console.log(packages);
 
 // 在控制台美化打印状态
 printStatus();
+// copyFile(); // 恢复示例文件到根目录,当前已经是,故而省略
 ```
 
 ## 命令参考
