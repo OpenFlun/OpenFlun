@@ -9,7 +9,7 @@
   },
   "main": "index.js",
   "bin": {
-    "open-flun": "./cli.js"
+    "open-flun": "cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
