@@ -3,12 +3,14 @@
 Flun 生态统一入口：一键安装所有官方包、查看安装状态、初始化项目模板;
 
 覆盖以下官方包：
+- `@flun/dns-auto-ssl`
 - `@flun/env`
 - `@flun/mailer`
 - `@flun/windows`
 - `@flun/webauthn-server`
 - `@flun/webauthn-browser`
 - `@flun/html-template`
+- GitHub桌面版汉化软件 [点击前往下载](https://github.com/OpenFlun/GH-DesktopToCN/releases/latest)
 
 ## 安装
 
@@ -108,14 +110,15 @@ printStatus();
 
 ## 包含的官方包
 
-| 包名                     | 功能              |
-| ------------------------ | ----------------- |
-| `@flun/env`              | 环境变量管理      |
-| `@flun/mailer`           | 邮件发送          |
-| `@flun/windows`          | Windows 服务相关  |
-| `@flun/webauthn-server`  | WebAuthn 服务端   |
-| `@flun/webauthn-browser` | WebAuthn 浏览器端 |
-| `@flun/html-template`    | HTML 模板处理     |
+| 包名                     | 功能                   |
+| ------------------------ | ---------------------- |
+| `@flun/dns-auto-ssl`     | 证书申请及配置自动续期 |
+| `@flun/env`              | 环境变量管理           |
+| `@flun/mailer`           | 邮件发送               |
+| `@flun/windows`          | Windows 服务相关       |
+| `@flun/webauthn-server`  | WebAuthn 服务端        |
+| `@flun/webauthn-browser` | WebAuthn 浏览器端      |
+| `@flun/html-template`    | HTML 模板处理          |
 
 > 这些包的具体 API 请参考各自文档，`open-flun` 本身只负责安装管理和项目初始化，不重新导出子包功能;
 
