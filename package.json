@@ -19,6 +19,7 @@
     "flun-ecosystem",
     "flun-installer",
     "webauthn",
+    "auto ssl",
     "env",
     "mailer",
     "windows service",
