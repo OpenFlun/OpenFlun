@@ -37,7 +37,7 @@
     "CHANGELOG.md",
     "LICENSE"
   ],
-  "author": "flun <cn@flun.top>",
+  "author": "flun <open@flun.top>",
   "engines": {
     "node": ">=22.12.0",
     "npm": ">=10.0.0"
