@@ -3,6 +3,7 @@
 Flun 生态统一入口：一键安装所有官方包、查看安装状态、初始化项目模板;
 
 覆盖以下官方包：
+- `@flun/desktop-builder`
 - `@flun/dns-auto-ssl`
 - `@flun/env`
 - `@flun/mailer`

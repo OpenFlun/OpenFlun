@@ -3,6 +3,7 @@ import { createRequire } from 'module';
 
 // ==================== 包列表 ====================
 const FLUN_PACKAGES = [
+    '@flun/desktop-builder',
     '@flun/dns-auto-ssl',
     '@flun/env',
     '@flun/mailer',
