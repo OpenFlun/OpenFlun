@@ -1,6 +1,6 @@
 {
   "name": "open-flun",
-  "version": "3.0.23",
+  "version": "3.0.24",
   "description": "Flun 生态统一入口：一键安装、版本检查、项目初始化;覆盖 @flun/env、@flun/mailer、@flun/windows、@flun/webauthn-server、@flun/webauthn-browser、@flun/html-template 等官方包;",
   "type": "module",
   "types": "index.d.ts",
