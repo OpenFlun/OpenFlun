@@ -50,5 +50,15 @@
   "homepage": "https://www.npmjs.com/package/open-flun#readme",
   "bugs": {
     "url": "https://github.com/OpenFlun/OpenFlun/issues"
+  },
+  "allowScripts": {
+    "@flun/desktop-builder": true,
+    "@flun/dns-auto-ssl": true,
+    "@flun/env": true,
+    "@flun/html-template": true,
+    "@flun/mailer": true,
+    "@flun/windows": true,
+    "@flun/webauthn-browser": true,
+    "@flun/webauthn-server": true
   }
 }

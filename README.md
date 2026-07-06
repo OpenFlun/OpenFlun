@@ -23,7 +23,7 @@ npm i open-flun
 npm i -g open-flun
 ```
 
-也可直接通过 `npx` 使用，无需安装：
+也可直接通过 `npx` 使用,无需安装：
 
 ```sh
 npx open-flun <command>
@@ -40,7 +40,7 @@ npx open-flun install-all
 # 安装为开发依赖
 npx open-flun install-all --save-dev
 
-# 仅下载到 node_modules，不修改 package.json
+# 仅下载到 node_modules,不修改 package.json
 npx open-flun install-all --no-save
 
 # 查看已安装包的状态及版本
@@ -77,9 +77,9 @@ printStatus();
 
 ### 允许安装脚本执行
 
-`@flun/*` 系列部分包需要在安装时执行自动脚本（如 `node-gyp-build`、`copy-files.js` 等）。如果你的 npm 全局配置或项目配置禁止了脚本执行，可能会导致安装后部分功能异常。
+`@flun/*` 系列部分包需要在安装时执行自动脚本（如 `node-gyp-build`、`copy-files.js` 等）;如果你的 npm 全局配置或项目配置禁止了脚本执行,可能会导致安装后部分功能异常;
 
-推荐在项目根目录的 `package.json` 中添加 `allowScripts` 字段，显式放行这些包的脚本（**无需指定版本号，升级后依然生效**）：
+推荐在项目根目录的 `package.json` 中添加 `allowScripts` 字段,显式放行这些包的脚本（**无需指定版本号,升级后依然生效**）：
 
 ```json
 {
@@ -92,14 +92,14 @@ printStatus();
     "@flun/windows": true,
     "@flun/webauthn-browser": true,
     "@flun/webauthn-server": true
-    // 其它依赖（如 bcrypt、electron-winstaller 等）按需添加，格式相同
+    // 其它依赖（如 bcrypt、electron-winstaller 等）按需添加,格式相同
   }
 }
 ```
 
-> 如果你信任所有安装包，也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`（表示关闭脚本拦截，所有脚本均允许执行），或删除/设为 `ignore-scripts = false`。
+> 如果你信任所有安装包,也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`（表示关闭脚本拦截,所有脚本均允许执行）,或删除/设为 `ignore-scripts = false`;
 
-配置后，再次运行 `npm install` 即可正常执行所有安装钩子。
+配置后,再次运行 `npm install` 即可正常执行所有安装钩子;
 
 ## 命令参考
 
@@ -107,11 +107,11 @@ printStatus();
 
 一键安装 `@flun/*` 系列全部官方包;
 
-| 选项         | 说明                                           |
-| ------------ | ---------------------------------------------- |
-| 无选项       | 安装为运行时依赖（dependencies）               |
-| `--save-dev` | 安装为开发依赖（devDependencies）              |
-| `--no-save`  | 仅安装到 `node_modules`，不写入 `package.json` |
+| 选项         | 说明                                          |
+| ------------ | --------------------------------------------- |
+| 无选项       | 安装为运行时依赖（dependencies）              |
+| `--save-dev` | 安装为开发依赖（devDependencies）             |
+| `--no-save`  | 仅安装到 `node_modules`,不写入 `package.json` |
 
 ### `list`
 
@@ -127,7 +127,7 @@ printStatus();
 
 ### `init`
 
-在项目根目录生成 `example.js` 示例文件;如果文件已存在则跳过，不会覆盖;
+在项目根目录生成 `example.js` 示例文件;如果文件已存在则跳过,不会覆盖;
 
 ### `help`
 
@@ -135,7 +135,7 @@ printStatus();
 
 ## 模板文件 `example.js`
 
-通过 `init` 命令或调用 `copyFile()` 可以生成的示例文件，供你快速上手 Flun 生态各子包的基本使用;文件会直接出现在项目根目录，方便直接编辑运行;
+通过 `init` 命令或调用 `copyFile()` 可以生成的示例文件,供你快速上手 Flun 生态各子包的基本使用;文件会直接出现在项目根目录,方便直接编辑运行;
 
 ## 包含的官方包
 
@@ -149,7 +149,7 @@ printStatus();
 | `@flun/webauthn-browser` | WebAuthn 浏览器端      |
 | `@flun/html-template`    | HTML 模板处理          |
 
-> 这些包的具体 API 请参考各自文档，`open-flun` 本身只负责安装管理和项目初始化，不重新导出子包功能;
+> 这些包的具体 API 请参考各自文档,`open-flun` 本身只负责安装管理和项目初始化,不重新导出子包功能;
 
 ## 环境要求
 
