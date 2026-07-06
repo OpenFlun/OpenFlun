@@ -12,6 +12,35 @@ Flun 生态统一入口：一键安装所有官方包、查看安装状态、初
 - `@flun/webauthn-browser`
 - `@flun/html-template`
 - GitHub桌面版汉化软件 [点击前往下载](https://github.com/OpenFlun/GH-DesktopToCN/releases/latest)
+---
+
+## 配置
+
+### 允许安装脚本执行
+
+`@flun/*` 系列部分包需要在安装时执行自动脚本（如 `node-gyp-build`、`copy-files.js` 等）;如果你的 npm 全局配置或项目配置禁止了脚本执行,可能会导致安装后部分功能异常;
+
+推荐在项目根目录的 `package.json` 中添加 `allowScripts` 字段,显式放行这些包的脚本（**无需指定版本号,升级后依然生效**）：
+
+```json
+{
+  "allowScripts": {
+    "@flun/desktop-builder": true,
+    "@flun/dns-auto-ssl": true,
+    "@flun/env": true,
+    "@flun/html-template": true,
+    "@flun/mailer": true,
+    "@flun/windows": true,
+    "@flun/webauthn-browser": true,
+    "@flun/webauthn-server": true
+    // 其它依赖（如 bcrypt、electron-winstaller 等）按需添加,格式相同
+  }
+}
+```
+
+> 如果你信任所有安装包,也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`（表示关闭脚本拦截,所有脚本均允许执行）,或删除/设为 `ignore-scripts = false`;
+
+---
 
 ## 安装
 
@@ -73,34 +102,6 @@ printStatus();
 // copyFile(); // 恢复示例文件到根目录,当前已经是,故而省略
 ```
 
-## 配置
-
-### 允许安装脚本执行
-
-`@flun/*` 系列部分包需要在安装时执行自动脚本（如 `node-gyp-build`、`copy-files.js` 等）;如果你的 npm 全局配置或项目配置禁止了脚本执行,可能会导致安装后部分功能异常;
-
-推荐在项目根目录的 `package.json` 中添加 `allowScripts` 字段,显式放行这些包的脚本（**无需指定版本号,升级后依然生效**）：
-
-```json
-{
-  "allowScripts": {
-    "@flun/desktop-builder": true,
-    "@flun/dns-auto-ssl": true,
-    "@flun/env": true,
-    "@flun/html-template": true,
-    "@flun/mailer": true,
-    "@flun/windows": true,
-    "@flun/webauthn-browser": true,
-    "@flun/webauthn-server": true
-    // 其它依赖（如 bcrypt、electron-winstaller 等）按需添加,格式相同
-  }
-}
-```
-
-> 如果你信任所有安装包,也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`（表示关闭脚本拦截,所有脚本均允许执行）,或删除/设为 `ignore-scripts = false`;
-
-配置后,再次运行 `npm install` 即可正常执行所有安装钩子;
-
 ## 命令参考
 
 ### `install-all [--save-dev|--no-save]`
@@ -137,7 +138,7 @@ printStatus();
 
 通过 `init` 命令或调用 `copyFile()` 可以生成的示例文件,供你快速上手 Flun 生态各子包的基本使用;文件会直接出现在项目根目录,方便直接编辑运行;
 
-## 包含的官方包
+## 包含的官方包(部分)
 
 | 包名                     | 功能                   |
 | ------------------------ | ---------------------- |
