@@ -15,15 +15,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "open",
-    "flun-ecosystem",
-    "flun-installer",
-    "webauthn",
     "auto ssl",
     "env",
-    "mailer",
-    "windows service",
+    "flun-ecosystem",
+    "flun-installer",
     "html template",
+    "nodejs-mobile-gyp",
+    "nodejs-mobile-react-native",
+    "node-mobile-app",
+    "mailer",
+    "webauthn",
+    "windows service",
+    "open",
     "placeholder"
   ],
   "files": [
@@ -57,6 +60,8 @@
     "@flun/env": true,
     "@flun/html-template": true,
     "@flun/mailer": true,
+    "@flun/nodejs-mobile-react-native": true,
+    "@flun/node-mobile-app": true,
     "@flun/windows": true,
     "@flun/webauthn-browser": true,
     "@flun/webauthn-server": true

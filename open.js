@@ -6,11 +6,16 @@ const FLUN_PACKAGES = [
     '@flun/desktop-builder',
     '@flun/dns-auto-ssl',
     '@flun/env',
-    '@flun/mailer',
-    '@flun/windows',
-    '@flun/webauthn-server',
-    '@flun/webauthn-browser',
     '@flun/html-template',
+    '@flun/mailer',
+    "@flun/nodejs-mobile-gyp",
+    "@flun/nodejs-mobile-react-native",
+    "@flun/node-mobile-app",
+    "passport-desktop-win32-ia32-msvc",
+    "passport-desktop-win32-x64-msvc",
+    '@flun/windows',
+    '@flun/webauthn-browser',
+    '@flun/webauthn-server',
 ];
 
 // ==================== 公共 API ====================

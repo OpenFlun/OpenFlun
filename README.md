@@ -6,11 +6,17 @@ Flun 生态统一入口：一键安装所有官方包、查看安装状态、初
 - `@flun/desktop-builder`
 - `@flun/dns-auto-ssl`
 - `@flun/env`
+- `@flun/html-template`
 - `@flun/mailer`
+- `@flun/nodejs-mobile-gyp`
+- `@flun/nodejs-mobile-react-native`
+- `@flun/node-mobile-app`
+- `passport-desktop-win32-ia32-msvc`
+- `passport-desktop-win32-x64-msvc`
 - `@flun/windows`
 - `@flun/webauthn-server`
 - `@flun/webauthn-browser`
-- `@flun/html-template`
+
 - GitHub桌面版汉化软件 [点击前往下载](https://github.com/OpenFlun/GH-DesktopToCN/releases/latest)
 ---
 
@@ -30,6 +36,8 @@ Flun 生态统一入口：一键安装所有官方包、查看安装状态、初
     "@flun/env": true,
     "@flun/html-template": true,
     "@flun/mailer": true,
+    "@flun/nodejs-mobile-react-native": true,
+    "@flun/node-mobile-app": true,
     "@flun/windows": true,
     "@flun/webauthn-browser": true,
     "@flun/webauthn-server": true
@@ -38,10 +46,7 @@ Flun 生态统一入口：一键安装所有官方包、查看安装状态、初
 }
 ```
 
-> 如果你信任所有安装包,也可以直接在项目 `.npmrc` 中设置 `allow-scripts = false`（表示关闭脚本拦截,所有脚本均允许执行）,或删除 `ignore-scripts `字段;
-
 ---
-
 ## 安装
 
 ```sh
@@ -140,15 +145,21 @@ printStatus();
 
 ## 包含的官方包(部分)
 
-| 包名                     | 功能                   |
-| ------------------------ | ---------------------- |
-| `@flun/dns-auto-ssl`     | 证书申请及配置自动续期 |
-| `@flun/env`              | 环境变量管理           |
-| `@flun/mailer`           | 邮件发送               |
-| `@flun/windows`          | Windows 服务相关       |
-| `@flun/webauthn-server`  | WebAuthn 服务端        |
-| `@flun/webauthn-browser` | WebAuthn 浏览器端      |
-| `@flun/html-template`    | HTML 模板处理          |
+| 包名                               | 功能                                      |
+| ---------------------------------- | ----------------------------------------- |
+| `@flun/desktop-builder`            | 桌面应用构建与打包                        |
+| `@flun/dns-auto-ssl`               | 证书申请及配置自动续期                    |
+| `@flun/env`                        | 环境变量管理                              |
+| `@flun/html-template`              | HTML 模板处理                             |
+| `@flun/mailer`                     | 邮件发送                                  |
+| `@flun/nodejs-mobile-gyp`          | 移动应用原生模块构建支持（node-gyp）      |
+| `@flun/nodejs-mobile-react-native` | 移动应用与 React Native 集成              |
+| `@flun/node-mobile-app`            | 移动应用构建与打包                        |
+| `passport-desktop-win32-ia32-msvc` | Windows 桌面端 Passport 32 位 MSVC 平台包 |
+| `passport-desktop-win32-x64-msvc`  | Windows 桌面端 Passport 64 位 MSVC 平台包 |
+| `@flun/windows`                    | Windows 服务相关                          |
+| `@flun/webauthn-server`            | WebAuthn 服务端                           |
+| `@flun/webauthn-browser`           | WebAuthn 浏览器端                         |
 
 > 这些包的具体 API 请参考各自文档,`open-flun` 本身只负责安装管理和项目初始化,不重新导出子包功能;
 
